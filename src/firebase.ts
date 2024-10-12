@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app";
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCoVjN85tq76380J5VDQt0MDMEBMBrfQQs",
-    authDomain: "travel-7fc76.firebaseapp.com",
-    projectId: "travel-7fc76",
-    storageBucket: "ravel-7fc76.appspot.com",
-    messagingSenderId: "347160530458",
-    appId: "1:347160530458:web:2a140bf9fc6bd863318ba3"
+    apiKey: import.meta.env.VITE_APP_FIREBASE_API_KEY,
+    authDomain: import.meta.env.VITE_APP_FIREBASE_AUTH_DOMAIN,
+    projectId: import.meta.env.VITE_APP_FIREBASE_PROJECT_ID,
+    storageBucket: import.meta.env.VITE_APP_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: import.meta.env.VITE_APP_FIREBASE_MESSAGIN_SENDER_ID,
+    appId: import.meta.env.VITE_APP_FIREBASE_APP_ID
 };
 
 // Initialize Firebase
